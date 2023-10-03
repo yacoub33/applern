@@ -34,13 +34,13 @@ function Navbar() {
           <li className="text-white/70 font-light mr-10 text-xs hover:cursor-not-allowed">
             iPad
           </li>
-          <li className="text-white/70 font-light mr-10 text-xs hover:cursor-pointer">
+          <li className="text-white/70 font-light mr-10 text-xs hover:cursor-not-allowed">
             iPhone
           </li>
           <li className="text-white/70 font-light mr-10 text-xs hover:cursor-not-allowed">
             Watch
           </li>
-          <li className="text-white/70 font-light mr-10 text-xs hover:cursor-pointer">
+          <li className="text-white/70 font-light mr-10 text-xs hover:cursor-not-allowed">
             AirPods
           </li>
           <Link to="AllProducts">
