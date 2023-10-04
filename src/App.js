@@ -5,6 +5,7 @@ import Home from "./screens/Home";
 import Product from "./screens/Product";
 import AllProducts from "./screens/AllProducts";
 import { products } from "./assets/data";
+import Cart from "./screens/Cart";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
             element={<AllProducts products={products} />}
           />
           <Route path="product/:id" element={<Product products={products} />} />
+          <Route path="cart" element={<Cart />} />
         </Routes>
         <Footer />
       </div>

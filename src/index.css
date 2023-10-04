@@ -11,8 +11,7 @@
   align-items: center;
   justify-content: center;
   visibility: hidden;
-  transition: all 500ms ease;
-  opacity: 0;
+  transition: all 700ms ease;
   transform: translateY(-100%);
   padding: 8px;
 }
@@ -22,7 +21,7 @@
   background-color: #ffffff;
   overflow: hidden;
   transform: translateY(0%);
-  transition: all 500ms ease;
+  transition: all 700ms ease;
 }
 
 .menu--open .menu__backdrop {
