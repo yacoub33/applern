@@ -8,7 +8,8 @@ export const products = [
     image:
       "https://ee.co.uk/medias/iphone-15-pro-max-natural-titanium-desktop-detail-1-WebP-Format-488?context=bWFzdGVyfHJvb3R8Mjc4NTh8aW1hZ2Uvd2VicHxzeXMtbWFzdGVyL3Jvb3QvaDQ1L2gyYi8xMDA3MzgwNDcwMTcyNi9pcGhvbmUtMTUtcHJvLW1heC1uYXR1cmFsLXRpdGFuaXVtLWRlc2t0b3AtZGV0YWlsLTFfV2ViUC1Gb3JtYXQtNDg4fGFkN2Q0YWUwMDQ2NmIxYzg0ZGJjYTY2NTUwM2RjZWI4ZjUxYmJmOTM5NjI4OTEyNTVmY2ZiMDExYTE5NTFmYzg",
     price: 999.99,
-    description: "The latest iPhone with Pro features.",
+    description:
+      "The iPhone 15 Pro is the latest flagship smartphone from Apple, featuring a stunning Super Retina XDR display, a powerful A15 Bionic chip, and a highly advanced camera system. With its sleek design and innovative features, it's the perfect choice for those who demand the best in technology and style. Whether you're capturing stunning photos and videos or enjoying immersive gaming and entertainment, the iPhone 15 Pro delivers a premium experience like no other.",
   },
   {
     id: 2,
