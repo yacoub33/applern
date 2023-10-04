@@ -88,8 +88,8 @@ function Navbar() {
       <ul
         className={
           !nav
-            ? "hidden"
-            : "fixed top-[50px] left-0 right-0 bg-white w-full h-screen px-8 py-8 text-left z-10 "
+            ? "menu__backdrop hidden"
+            : "menu--open h-full w-full top-[50px] left-0 right-0 px-8 py-16 text-left z-10 "
         }
       >
         <Link to="/">
