@@ -5,7 +5,7 @@ function SmallProduct({ product }) {
   return (
     <Link to={`/product/${product.id}`}>
       <div className="text-center align-middle m-5 w-[250px]">
-        <div className="w-[250px] h-[250px]">
+        <div className="w-[250px] h-[250px] grid">
           <img
             className="w-full h-full rounded-lg object-scale-down"
             src={product.image}

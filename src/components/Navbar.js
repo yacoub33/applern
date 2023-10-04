@@ -55,7 +55,7 @@ function Navbar() {
         </ul>
       </div>
 
-      <div className="h-[50px] w-full fixed z-10 bg-white/90 flex md:hidden justify-between items-center px-4">
+      <div className="h-[50px] w-full fixed z-20 bg-white/90 flex md:hidden justify-between items-center px-4">
         <Link to="/">
           <AiFillApple
             size={20}
@@ -89,7 +89,7 @@ function Navbar() {
         className={
           !nav
             ? "menu__backdrop hidden"
-            : "menu--open h-full w-full top-[50px] left-0 right-0 px-8 py-16 text-left z-10 "
+            : "menu--open h-full w-full z-10 left-0 right-0 px-6 py-16 text-left "
         }
       >
         <Link to="/">

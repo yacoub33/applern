@@ -10,7 +10,7 @@ function Products({ product }) {
   console.log(item);
 
   return (
-    <div className="w-full pt-16">
+    <div className="w-full pt-16 px-6">
       <h1 className="font-semibold text-4xl mx-auto max-w-[1400px] mb-8">
         Buy {item.name}
       </h1>
@@ -27,7 +27,7 @@ function Products({ product }) {
         <div className="mx-auto">
           <h1 className="font-semibold text-4xl">{item.name}</h1>
           <p className="font-semibold text-1xl">{item.description}</p>
-          <Button price={item.price} />
+          <Button price={item.price} name={item.name} />
         </div>
       </div>
     </div>
