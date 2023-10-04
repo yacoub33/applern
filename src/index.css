@@ -11,8 +11,8 @@
   align-items: center;
   justify-content: center;
   visibility: hidden;
-  transition: all 700ms ease;
-  transform: translateY(-100%);
+  transition: all 900ms ease;
+  transform: translateY(-150%);
   padding: 8px;
 }
 
