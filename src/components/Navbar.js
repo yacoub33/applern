@@ -19,7 +19,7 @@ function Navbar() {
 
   return (
     <>
-      <div className="hidden md:flex h-[40px] w-full fixed z-10 bg-[#1d1d1f]/70 items-center">
+      <div className="hidden md:flex h-[40px] w-full fixed z-10 bg-[#1d1d1f]/70 -white/70 items-center">
         <ul className="flex max-w-[1200px] mx-auto items-center">
           <Link to="/">
             <AiFillApple
@@ -55,30 +55,30 @@ function Navbar() {
         </ul>
       </div>
 
-      <div className="h-[50px] w-full fixed z-10 bg-[#1d1d1f]/90 flex md:hidden justify-between items-center px-4">
+      <div className="h-[50px] w-full fixed z-10 bg-white/90 flex md:hidden justify-between items-center px-4">
         <Link to="/">
           <AiFillApple
             size={20}
-            className="text-white/70 font-light text-xs hover:cursor-pointer"
+            className="text-[#1d1d1f]/90  font-light text-xs hover:cursor-pointer"
           />
         </Link>
         <div className="flex">
           <BsBag
             size={15}
-            className="text-white/70 font-light text-sm hover:cursor-pointer mr-5"
+            className="text-[#1d1d1f]/90  font-light text-sm hover:cursor-pointer mr-5"
           />
           <div className="md:hidden">
             {!nav ? (
               <HiMenuAlt4
                 onClick={handleClick}
                 size={20}
-                className="text-white/70 font-light text-sm hover:cursor-pointer"
+                className="text-[#1d1d1f]/90  font-light text-sm hover:cursor-pointer"
               />
             ) : (
               <AiOutlineClose
                 onClick={handleClose}
                 size={20}
-                className="text-white/70 font-light text-sm hover:cursor-pointer"
+                className="text-[#1d1d1f]/90  font-light text-sm hover:cursor-pointer"
               />
             )}
           </div>
@@ -89,51 +89,51 @@ function Navbar() {
         className={
           !nav
             ? "hidden"
-            : "fixed top-[50px] left-0 right-0 bg-[#1d1d1f] w-full h-screen px-8 py-8 text-left z-10 "
+            : "fixed top-[50px] left-0 right-0 bg-white w-full h-screen px-8 py-8 text-left z-10 "
         }
       >
         <Link to="/">
           <li
             onClick={handleClose}
-            className="w-full mb-4 text-2xl font-semibold text-white"
+            className="w-full mb-4 text-2xl font-semibold text-[#1d1d1f]/90 "
           >
             Home
           </li>
         </Link>
         <li
           onClick={handleClose}
-          className="w-full mb-4 text-2xl font-semibold text-white"
+          className="w-full mb-4 text-2xl font-semibold  text-[#1d1d1f]/90 "
         >
           Mac
         </li>
         <li
           onClick={handleClose}
-          className="w-full mb-4 text-2xl font-semibold text-white"
+          className="w-full mb-4 text-2xl font-semibold  text-[#1d1d1f]/90 "
         >
           iPad
         </li>
         <li
           onClick={handleClose}
-          className="w-full mb-4 text-2xl font-semibold text-white"
+          className="w-full mb-4 text-2xl font-semibold  text-[#1d1d1f]/90 "
         >
           iPhone
         </li>
         <li
           onClick={handleClose}
-          className="w-full mb-4 text-2xl font-semibold text-white"
+          className="w-full mb-4 text-2xl font-semibold  text-[#1d1d1f]/90 "
         >
           Watch
         </li>
         <li
           onClick={handleClose}
-          className="w-full mb-4 text-2xl font-semibold text-white"
+          className="w-full mb-4 text-2xl font-semibold  text-[#1d1d1f]/90 "
         >
           AirPods
         </li>
         <Link to="AllProducts">
           <li
             onClick={handleClose}
-            className="w-full mb-4 text-2xl font-semibold text-white"
+            className="w-full mb-4 text-2xl font-semibold  text-[#1d1d1f]/90 "
           >
             All Products
           </li>
