@@ -55,7 +55,7 @@ function Navbar() {
         </ul>
       </div>
 
-      <div className="h-[50px] w-full fixed z-20 bg-white/60 backdrop-blur-sm flex md:hidden justify-between items-center px-4">
+      <div className="h-[50px] w-full fixed z-20 bg-white/60 backdrop-blur-md flex md:hidden justify-between items-center px-4">
         <Link to="/">
           <AiFillApple
             size={20}
