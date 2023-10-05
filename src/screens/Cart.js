@@ -21,13 +21,19 @@ function Cart() {
             />
             <div>
               <h1 className="font-light">iPhone 15 Pro</h1>
-              <h2 className="font-light">£999.99</h2>
-              <h2 className="text-red-500">Remove</h2>
+              <h2 className="font-light text-sm">£999.99</h2>
+              <h2 className="text-red-500 text-sm">Remove</h2>
             </div>
           </div>
           <h1 className=" font-light">1</h1>
-          <h1 className=" font-light">999.99</h1>
+          <h1 className=" font-light">£999.99</h1>
         </div>
+      </div>
+
+      <div className="hidden md:block border border-slate-700 rounded-xl p-4 hover:bg-gray-100 mt-5 mb-5 hover:cursor-pointer backdrop-blur-sm max-w-[250px]">
+        <h1 className="hover:cursor-pointer text-center">
+          Proceed to checkout
+        </h1>
       </div>
 
       <div className="fixed md:hidden rounded-md h-[60px] w-full px-6 bottom-5 z-6">
