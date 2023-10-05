@@ -38,7 +38,7 @@ function Products({ product }) {
             <h1 className="text-white font-semibold">{item.name}</h1>
             <h1 className="text-white font-semibold text-xs">£{item.price}</h1>
           </div>
-          <h1 className="rounded-full bg-black/80 text-blue-500 px-4 p-1 font-semibold">
+          <h1 className="rounded-full bg-black/80 text-blue-500 px-4 p-1 font-semibold hover:bg-black/50 ">
             BUY
           </h1>
         </div>
