@@ -1,13 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import ProductContainer from "./ProductContainer";
 import Button from "./Button";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 
-function Products({ product }) {
+function Products({ product, addToCart }) {
   const { id } = useParams();
   const item = product.find((product) => id == product.id);
 
-  console.log(item);
+  const [added, setAdded] = useState(false);
+
+  function addItemToCart(item) {
+    setAdded(true);
+    addToCart(item);
+  }
 
   return (
     <div className="w-full pt-16  ">
@@ -32,15 +37,27 @@ function Products({ product }) {
           <Button price={item.price} name={item.name} />
         </div>
       </div>
+
       <div className="fixed md:hidden rounded-md h-[60px] w-full px-6 bottom-5 z-6">
         <div className="bg-gray-600/60 px-4 backdrop-blur-md rounded-xl h-full flex justify-between items-center ">
           <div>
             <h1 className="text-white font-semibold">{item.name}</h1>
             <h1 className="text-white font-semibold text-xs">£{item.price}</h1>
           </div>
-          <h1 className="rounded-full bg-black/80 text-blue-500 px-4 p-1 font-semibold hover:bg-black/50 ">
-            BUY
-          </h1>
+          {added ? (
+            <Link to={"/cart"}>
+              <h1 className="rounded-full bg-black/50 text-blue-100 px-4 p-1 font-semibold hover:bg-black/50 border border-white">
+                CHECKOUT
+              </h1>
+            </Link>
+          ) : (
+            <h1
+              onClick={() => addItemToCart(item)}
+              className="rounded-full bg-black/80 text-blue-500 px-4 p-1 font-semibold hover:bg-black/50 "
+            >
+              ADD TO CART
+            </h1>
+          )}
         </div>
       </div>
     </div>

@@ -11,7 +11,7 @@ import Product from "./screens/Product";
 import AllProducts from "./screens/AllProducts";
 import { products } from "./assets/data";
 import Cart from "./screens/Cart";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 function App() {
   function ScrollToTop() {
@@ -23,6 +23,28 @@ function App() {
 
     return null;
   }
+
+  const [cart, setCart] = useState([]);
+
+  function addToCart(item) {
+    const existingItem = cart.find((product) => product.id === item.id);
+    if (existingItem) {
+      setCart((prevCart) =>
+        prevCart.map((product) =>
+          product.id === existingItem.id
+            ? { ...product, quantity: product.quantity + 1 }
+            : product
+        )
+      );
+    } else {
+      setCart((prevCart) => [...prevCart, { ...item, quantity: 1 }]);
+    }
+  }
+
+  useEffect(() => {
+    console.log(cart);
+  }, [cart]);
+
   return (
     <Router>
       <div className="App">
@@ -34,7 +56,10 @@ function App() {
             path="allproducts"
             element={<AllProducts products={products} />}
           />
-          <Route path="product/:id" element={<Product products={products} />} />
+          <Route
+            path="product/:id"
+            element={<Product products={products} addToCart={addToCart} />}
+          />
           <Route path="cart" element={<Cart />} />
         </Routes>
         <Footer />
