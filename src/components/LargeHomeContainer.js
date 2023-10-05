@@ -2,7 +2,7 @@ import React from "react";
 import { AiOutlineRight } from "react-icons/ai";
 import { Link } from "react-router-dom";
 
-function LargeHomeContainer({ title, subtitle, image, textcolor }) {
+function LargeHomeContainer({ title, subtitle, image, textcolor, trueImage }) {
   const textStyle = {
     color: textcolor || "white",
   };

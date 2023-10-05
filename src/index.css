@@ -7,13 +7,14 @@
   background-color: #ffffff;
   width: 100vh;
   height: 100vh;
-  display: flex;
+  display: block;
   align-items: center;
   justify-content: center;
   visibility: hidden;
   transition: all 900ms ease;
   transform: translateY(-150%);
   padding: 8px;
+  z-index: 10;
 }
 
 .menu--open {
