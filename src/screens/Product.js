@@ -6,7 +6,7 @@ function Product({ products }) {
   return (
     <div>
       <Products product={products} />
-      <Recommended />
+      <Recommended products={products} />
     </div>
   );
 }

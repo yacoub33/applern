@@ -48,10 +48,12 @@ function Navbar() {
               All Products
             </li>
           </Link>
-          <BsBag
-            size={15}
-            className="text-white/70 font-light mr-5 text-sm hover:cursor-pointer"
-          />
+          <Link to="/cart">
+            <BsBag
+              size={15}
+              className="text-white/70 font-light mr-5 text-sm hover:cursor-pointer"
+            />
+          </Link>
         </ul>
       </div>
 
