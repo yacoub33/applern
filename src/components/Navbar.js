@@ -57,31 +57,31 @@ function Navbar() {
         </ul>
       </div>
 
-      <div className="h-[50px] w-full fixed z-20 bg-white/60 backdrop-blur-md flex md:hidden justify-between items-center px-4">
+      <div className="h-[50px] w-full fixed z-20 bg-white/80 backdrop-blur-md flex md:hidden justify-between items-center px-4">
         <Link to="/">
           <AiFillApple
-            size={20}
+            size={25}
             className="text-[#1d1d1f]/90  font-light text-xs hover:cursor-pointer"
           />
         </Link>
         <div className="flex">
           <Link to="/cart">
             <BsBag
-              size={15}
-              className="text-[#1d1d1f]/90  font-light text-sm hover:cursor-pointer mr-5"
+              size={17}
+              className="text-[#1d1d1f]/90  font-light text-sm hover:cursor-pointer mr-4  mt-[2px]"
             />
           </Link>
           <div className="md:hidden">
             {!nav ? (
               <HiMenuAlt4
                 onClick={handleClick}
-                size={20}
+                size={24}
                 className="text-[#1d1d1f]/90  font-light text-sm hover:cursor-pointer"
               />
             ) : (
               <AiOutlineClose
                 onClick={handleClose}
-                size={20}
+                size={24}
                 className="text-[#1d1d1f]/90  font-light text-sm hover:cursor-pointer"
               />
             )}

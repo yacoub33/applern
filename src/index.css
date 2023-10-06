@@ -11,7 +11,7 @@
   align-items: center;
   justify-content: center;
   visibility: hidden;
-  transition: all 900ms ease;
+  transition: all 700ms ease;
   transform: translateY(-150%);
   padding: 8px;
   z-index: 10;
