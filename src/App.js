@@ -41,6 +41,21 @@ function App() {
     }
   }
 
+  function changeQuantity(item, quantity) {
+    setCart(
+      cart.map((product) => {
+        if (product.id === item.id) {
+          return {
+            ...item,
+            quantity: +quantity,
+          };
+        } else {
+          return product;
+        }
+      })
+    );
+  }
+
   useEffect(() => {
     console.log(cart);
   }, [cart]);
@@ -60,7 +75,10 @@ function App() {
             path="product/:id"
             element={<Product products={products} addToCart={addToCart} />}
           />
-          <Route path="cart" element={<Cart />} />
+          <Route
+            path="cart"
+            element={<Cart cart={cart} changeQuantity={changeQuantity} />}
+          />
         </Routes>
         <Footer />
       </div>

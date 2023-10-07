@@ -1,11 +1,10 @@
 import React, { useState } from "react";
-import ProductContainer from "./ProductContainer";
 import Button from "./Button";
 import { Link, useParams } from "react-router-dom";
 
-function Products({ product, addToCart }) {
+function Products({ product, addToCart, cart }) {
   const { id } = useParams();
-  const item = product.find((product) => id == product.id);
+  const item = product.find((product) => +id === product.id);
 
   const [added, setAdded] = useState(false);
 
