@@ -25,14 +25,14 @@ function LargeHomeContainer({ title, subtitle, image, textcolor, trueImage }) {
       </h2>
 
       <div className="relative inset-0 translate-y-[-450px] md:translate-y-[-570px] flex items-center justify-center text-white text-md md:text-xl font-light">
-        <Link to="product/1">
-          <h2 className="text-blue-500 mr-10 hover:cursor-pointer flex items-center">
-            Learn more <AiOutlineRight className="ml-2" />
+        <Link to="allproducts">
+          <h2 className="text-blue-500 hover:cursor-pointer flex items-center">
+            All Products <AiOutlineRight className="ml-2" />
           </h2>
         </Link>
-        <h2 className="text-blue-500 mr-10 hover:cursor-pointer flex items-center">
+        {/* <h2 className="text-blue-500 mr-10 hover:cursor-pointer flex items-center">
           Buy <AiOutlineRight className="ml-2" />
-        </h2>
+        </h2> */}
       </div>
     </div>
   );

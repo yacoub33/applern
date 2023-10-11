@@ -26,7 +26,12 @@ function Cart({ cart, changeQuantity }) {
                   <h2 className="font-light text-xs justify-center">
                     £{item.price}
                   </h2>
-                  <h2 className="text-red-500 text-xs">Remove</h2>
+                  <h2
+                    onClick={() => alert("Feature not added yet")}
+                    className="text-red-500 text-xs hover:cursor-pointer"
+                  >
+                    Remove
+                  </h2>
                 </div>
               </div>
               <input

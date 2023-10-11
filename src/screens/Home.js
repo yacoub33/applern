@@ -2,8 +2,7 @@ import React from "react";
 import LargeHomeContainer from "../components/LargeHomeContainer";
 import { products } from "../assets/data";
 
-function Home() {
-  console.log(products);
+function Home({ products }) {
   return (
     <div>
       <LargeHomeContainer

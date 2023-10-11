@@ -66,7 +66,7 @@ function App() {
         <Navbar />
         <ScrollToTop />
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<Home products={products} />} />
           <Route
             path="allproducts"
             element={<AllProducts products={products} />}

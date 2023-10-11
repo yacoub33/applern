@@ -35,17 +35,18 @@ function Products({ product, addToCart, cart }) {
           </p>
           {added ? (
             <Link to={"/cart"}>
-              <h1 className="rounded-md hover:cursor-pointer bg-black/50 text-blue-100 px-4 p-4 mt-4 font-semibold hover:bg-black/50 border border-gray-950">
+              <h1 className="hidden md:block rounded-md hover:cursor-pointer bg-black/50 text-blue-100 px-4 p-4 mt-4 font-semibold hover:bg-black/50 border border-gray-950">
                 CHECKOUT
               </h1>
             </Link>
           ) : (
-            <h1
+            <div
               onClick={() => addItemToCart(item)}
-              className="rounded-md hover:cursor-pointer bg-black/80 text-blue-500 px-4 p-4 mt-4 font-semibold hover:bg-black/10 border border-gray-950 "
+              className="hidden md:block  rounded-md hover:cursor-pointer bg-black/80 text-blue-500 px-4 p-4 mt-4 font-semibold hover:bg-black/10 border border-gray-950 "
             >
-              ADD TO CART
-            </h1>
+              <h1>ADD TO CART</h1>
+              <h1 className="text-sm">£{item.price}</h1>
+            </div>
           )}
         </div>
       </div>
